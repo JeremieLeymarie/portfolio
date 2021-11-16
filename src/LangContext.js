@@ -17,10 +17,21 @@ export const lang = {
         expDescBabysitting: "Multiple baby-sittings, some ponctually, some weekly, with children of all ages. Help with homework",
         expHeaderIcom: "Intern - I-com",
         expDescIcom: "Job shadowing with a Webmaster : search engine optimization (SEO), Google Analytics, HTML",
-        expHeaderTheater : "Comedian - Grand Théâtre de Dijon",
+        expHeaderTheater: "Comedian - Grand Théâtre de Dijon",
         expDescTheater: `Playing the role of Michel Morin, in the world premiere of "L'Opéra de la Lune", written by Prévert and directed by Damien Caille-Perret`,
         expHeaderISG: "Instructor in web development - ISG",
         expDescISG: "Tutoring ISG (Business school) students in the making of a website, using HTML, CSS & JQuery for the API calls. 1 week.",
+        skills: "Skills",
+        projects: [
+            {
+                name: "Spotify Clone",
+                duration: "<span class='duration'>Duration :</span> 2 days",
+                number: "<span class='duration'>Group project</span>",
+                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
+                techno: ["/techno/reactjs.svg", "/techno/php.svg"],
+                photo: "/projects/mySpotify.png"
+            }
+        ]
     },
     fr: {
         navProjects: "Projets",
@@ -38,10 +49,19 @@ export const lang = {
         expDescBabysitting: "Multiples gardes d'enfants, régulières et ponctuelles, avec des enfants de tous âges, et aide aux devoirs",
         expHeaderIcom: "Stagiaire - I-com",
         expDescIcom: "Stage d'observation auprès d'un Webmaster : référencement (SEO), Google Analytics, HTML",
-        expHeaderTheater : "Comédien - Grand Théâtre de Dijon",
+        expHeaderTheater: "Comédien - Grand Théâtre de Dijon",
         expDescTheater: `Interprétation du rôle de Michel Morin, dans la première mondiale de "l'Opéra de Lune", de Prévert et mis en scène par Damien Caille-Perret`,
         expHeaderISG: "Assistant de formation en développement web - ISG",
         expDescISG: "Tutorat pour l'ISG (Ecole de commerce) pour la création d'un site web, réalisé en HTML, CSS et JQuery pour les calls API. 1 semaine",
+        skills: "Compétences",
+        projects: [
+            {
+                name: "Spotify Clone",
+                duration: "Durée : 2 jours",
+                number: "Projet en groupe",
+                desc: ""
+            }
+        ]
     },
 }
 export const LangContext = React.createContext(lang.eng);

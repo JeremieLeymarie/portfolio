@@ -1,18 +1,16 @@
+import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
+import {
+    Timeline, TimelineConnector,
+    TimelineContent, TimelineDot, TimelineItem,
+    TimelineSeparator
+} from "@mui/lab";
+import {
+    Avatar, Box, Grid
+} from "@mui/material";
 import React, { useContext, useEffect } from "react";
 import { LangContext } from "../LangContext";
-import {
-    Box,
-    Avatar,
-    Grid,
-} from "@mui/material";
-import {
-    Timeline,
-    TimelineItem,
-    TimelineSeparator,
-    TimelineDot,
-    TimelineConnector,
-    TimelineContent,
-} from "@mui/lab";
+import Skills from "./Skills";
+import Socials from "./Socials";
 
 export default function Bio(props) {
     const lang = useContext(LangContext).lang;
@@ -20,25 +18,43 @@ export default function Bio(props) {
         return React.createElement("div", { dangerouslySetInnerHTML: { __html: str } });
     }
 
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            let arrow = document.getElementById("arrow");
+            if (window.scrollY > 0) {
+                arrow.style.visibility = "hidden";
+            }
+            else {
+                arrow.style.visibility = "visible";
+            }
+        });
+    }, []);
+
     return (
         <Box>
-            <Grid container spacing={2} sx={{ marginTop: "6rem", padding: "1rem", marginBottom: "20rem" }}>
+            <Grid container spacing={2} className="bio-wrapper">
                 <Grid item xs={4} >
-                    <Avatar className="portrait" sx={{ width: "80%", height: "80%", maxWidth: "400px" }} alt="Jérémie Leymarie" src="/portrait.jpg" />
+                    <Avatar className="portrait" sx={{ width: "300px", height: "300px", maxWidth: "600px", marginTop: "-5rem" }} alt="Jérémie Leymarie" src="/portrait.jpg" />
                 </Grid>
                 <Grid item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
                     <Box sx={{ display: "flex", alignItems: "flex-end", flexDirection: "column", marginTop: "-2rem" }}>
                         <Box sx={{ fontSize: "1.75rem", fontWeight: "500", color: "white" }}>Jérémie Leymarie</Box>
                         <Box sx={{ color: "#9388A2", fontSize: "1.15rem", fontWeight: "500", marginBottom: "2.5rem", marginTop: ".5rem" }}>{lang.developer}</Box>
                         <Box sx={{ color: "#21B6A8", fontSize: "1.15rem", fontWeight: "500", width: "70%" }}>{renderHtml(lang.desc)}</Box>
+                        <Socials />
                     </Box>
                 </Grid>
+                <Box sx={{ width: "100%", display: "flex", justifyContent: "center", position: "absolute", bottom: "0px" }}>
+                    <KeyboardArrowDownOutlinedIcon id="arrow" className="arrow" sx={{ color: "white", fontSize: "45px" }} />
+                </Box>
             </Grid >
+
             <Box sx={{ display: "flex", width: "100%", justifyContent: "space-evenly" }}>
                 <Formation />
+                <Skills />
             </Box>
             <Experiences />
-        </Box>
+        </Box >
 
     );
 }
@@ -46,9 +62,8 @@ export default function Bio(props) {
 function Formation() {
     const lang = useContext(LangContext).lang;
 
-
     return (
-        <Box id="timeline-wrapper">
+        <Box id="experience-wrapper">
             <Box className="title">{lang.education}</Box>
             <Timeline id="timeline" position="alternate" sx={{ color: "white", padding: "0px", width: "max-content" }}>
                 <TimelineItem className="timeline-item">
@@ -93,9 +108,9 @@ function Experiences() {
     const lang = useContext(LangContext).lang;
 
     return (
-        <Box id="timeline-wrapper">
+        <Box sx={{ marginBottom: "2rem", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
             <Box className="title">Experiences</Box>
-            <Timeline id="timeline" position="alternate" sx={{ color: "white", padding: "0px", width: "max-content" }}>
+            <Timeline className="experience-wrapper" id="timeline" position="alternate" sx={{ color: "white", padding: "0px", width: "max-content", display: "flex", justifyContent: "center", margin: "0px" }}>
                 <TimelineItem className="timeline-item">
                     <TimelineSeparator >
                         <TimelineDot variant="outlined" sx={{ borderColor: "#21B6A8" }} />
@@ -145,20 +160,3 @@ function Experiences() {
     );
 }
 
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-    //         const offset = document.getElementById("timeline-wrapper").getBoundingClientRect();
-
-    //         if (offset.top >= 0 && offset.bottom <= window.innerHeight) {
-    //             const items = document.getElementsByClassName("timeline-item");
-    //             for(let item of items){
-    //                 item.classList.add("fade-in");
-    //             }
-    //             setTimeout(()=>{
-    //                 for(let item of items){
-    //                     item.classList.remove("fade-in");
-    //                 }
-    //             }, 2000)
-    //         }
-    //     });
-    // }, []);

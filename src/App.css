@@ -56,6 +56,14 @@ em {
   font-style: normal;
 }
 
+#timeline{
+  margin : 0px; 
+}
+
+ul{
+  margin : 0px; 
+}
+
 .timeline-header {
   color: #A3EBB1;
   font-size: 1.25rem;
@@ -66,23 +74,132 @@ em {
   color: #9388A2;
 }
 
-.title{
+.experience-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
   font-size: 2rem;
-  color : white; 
+  color: white;
   margin-bottom: 4rem;
   width: 100%;
-  text-align : center; 
+  text-align: center;
 }
 
-.fade-in{
-  animation : fadeIn 2s ease; 
+.fade-in {
+  animation: fadeIn 2s ease;
 }
 
-@keyframes fadeIn{
-  from  {
-    transform : translateY(200px);
+#skills-wrapper {
+  margin-bottom: 7rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 2rem;
+  margin: 1.5rem;
+  font-size: 1.115rem;
+}
+
+.skill-bar {
+  min-width: 300px;
+}
+
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #21B6A8 !important;
+}
+
+.bio-wrapper {
+  margin-top: 6rem;
+  padding: 3rem;
+  margin-bottom: 5rem;
+  height: 90vh;
+  place-items: center;
+  position: relative;
+}
+
+.arrow {
+  animation: bounce .7s ease infinite;
+}
+
+.project-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+
+.project-duration, .project-number{
+  margin-bottom: .5rem;
+  font-size: 1.15rem;
+}
+
+.duration {
+  color: #21B6A8;
+}
+
+.project-description{
+  font-weight: 400;
+  color :#A3EBB1;
+  /* text-align: justify; */
+}
+
+.project-wrapper {
+  margin-top: 5rem;
+  color: white;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
+  padding : 2rem; 
+}
+.project-text-wrapper{
+  width : 70%
+}
+.project-img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: .75rem;
+  border : 2px solid #21B6A8; 
+  -webkit-box-shadow: 2px 2px 20px 5px #A3EBB1;
+  box-shadow: 4px 0px 10px 0px #A3EBB1;
+  background-size: cover;
+  cursor: pointer;
+  transition : transform .35s ease; 
+}
+
+.project-img:hover{
+  transform : scale(1.05); 
+}
+
+.social-icon{
+  cursor : pointer; 
+  transition : all .2s ease; 
+}
+
+.social-icon:hover{
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(200px);
   }
-  to{
-    transform : translateY(0px); 
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
   }
 }
