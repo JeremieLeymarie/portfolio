@@ -1,0 +1,88 @@
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #050A30;
+  /* 001D3D */
+}
+
+body {
+  height: 100%;
+  line-height: 1.5rem;
+}
+
+.App {
+  width: 80%;
+  margin-top: 4rem;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.active-nav-item {
+  color: white;
+}
+
+.lang {
+  color: #9388A2;
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+.lang:hover {
+  color: #A3EBB1;
+}
+
+.active-lang {
+  color: #A3EBB1;
+}
+
+.portrait {
+  filter: grayscale(100%);
+  transition: filter .5s ease;
+}
+
+.portrait:hover {
+  filter: none;
+}
+
+em {
+  color: #A3EBB1;
+  font-style: normal;
+}
+
+.timeline-header {
+  color: #A3EBB1;
+  font-size: 1.25rem;
+}
+
+.timeline-date {
+  font-size: .85rem;
+  color: #9388A2;
+}
+
+.title{
+  font-size: 2rem;
+  color : white; 
+  margin-bottom: 4rem;
+  width: 100%;
+  text-align : center; 
+}
+
+.fade-in{
+  animation : fadeIn 2s ease; 
+}
+
+@keyframes fadeIn{
+  from  {
+    transform : translateY(200px);
+  }
+  to{
+    transform : translateY(0px); 
+  }
+}
