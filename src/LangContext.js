@@ -1,12 +1,11 @@
 import React from "react";
+import { technos } from "./technos";
 
 export const lang = {
     eng: {
         navProjects: "Projects",
         developer: "Web developer",
-        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible.
-        I especially like <em>creating tools</em> whether it is for other devs or regular users. Currently learning (mostly)
-        Javascript & PHP stacks at <em>Web@cademie by Epitech</em>, in Paris.`,
+        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible. I especially like<em>creating tools</em> whether it is for other devs or regular users.Currently learning (mostly) Javascript & PHP stacks at <em> Web@cademie by Epitech</em>, in Paris.`,
         timelineDescWac: "Web development",
         timelineHeaderFac: "University Paris 1 Panthéon-Sorbonne",
         timelineDescFac: "Philosophy & History",
@@ -18,26 +17,78 @@ export const lang = {
         expHeaderIcom: "Intern - I-com",
         expDescIcom: "Job shadowing with a Webmaster : search engine optimization (SEO), Google Analytics, HTML",
         expHeaderTheater: "Comedian - Grand Théâtre de Dijon",
-        expDescTheater: `Playing the role of Michel Morin, in the world premiere of "L'Opéra de la Lune", written by Prévert and directed by Damien Caille-Perret`,
+        expDescTheater: `Playing the role of Michel Morin, in the world premiere of "L'Opéra de la Lune", written by Prévert and directed by Damien Caille - Perret`,
         expHeaderISG: "Instructor in web development - ISG",
         expDescISG: "Tutoring ISG (Business school) students in the making of a website, using HTML, CSS & JQuery for the API calls. 1 week.",
         skills: "Skills",
         projects: [
             {
+                className: "project-left",
+                id: "spotify-proj",
                 name: "Spotify Clone",
+                source: "https://github.com/JeremieLeymarie/SpotifyClone",
                 duration: "<span class='duration'>Duration :</span> 2 days",
                 number: "<span class='duration'>Group project</span>",
-                desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
-                techno: ["/techno/reactjs.svg", "/techno/php.svg"],
+                desc: `This project was done during a rush, i.e a week-end group project. The goal was to create a basic functionnal Spotify clone. The API had to be built in PHP. It sends JSON response to the React.js front-end. We were given a SQL database. It was the first project we ever did using React.js. It features, albums, artists, genres & songs listings and pages. Songs are playable. `,
+                techno: [technos.react, technos.php, technos.sql],
                 photo: "/projects/mySpotify.png"
+            },
+            {
+                className: "project-right",
+                id: "quizz-proj",
+                name: "Quizz App",
+                source: "https://github.com/JeremieLeymarie/QuizzApp",
+                duration: "<span class='duration'>Duration :</span> 1 week",
+                number: "<span class='duration'>Group project</span>",
+                desc: `The project was to create a simple quizz app. We had to use Symfony for the first time. The front-end is based on Symfony's templating engine Twig. A small SQL database was given with the assignment. `,
+                techno: [technos.symfony, technos.sql],
+                photo: "/projects/quizzApp.png"
+            },
+            {
+                className: "project-left",
+                id: "pie-proj",
+                source: "https://github.com/JeremieLeymarie/PiePHP",
+                name: "PiePHP Framework",
+                duration: "<span class='duration'>Duration :</span> 2 weeks",
+                number: "<span class='duration'>Solo project</span>",
+                desc: `I achieved this project, juste before using a web framework for the first time. The goal was to create a mini PHP framework, using the same basic principles Symfony, Laravel or CakePHP use. It follows the MVC pattern.`,
+                techno: [technos.php],
+                photo: "/projects/PiePHP.png"
+            },
+            // {
+            //     className: "project-left",
+            //     id: "pushSwap-proj",
+            //     run: true,
+            //     source : "#",
+            //     name: "Push Swap Algorithm",
+            //     duration: "<span class='duration'>Duration :</span> 1 week",
+            //     number: "<span class='duration'>Solo project</span>",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
+            //     techno: [technos.php],
+            //     photo: "/projects/pushSwap.png"
+            // },
+            {
+                className: "project-right",
+                id: "carrieres-proj",
+                source: "https://github.com/JeremieLeymarie/carrieres_sauvanet",
+                see: "https://www.carrieres-sauvanet.com/",
+                name: "Showcase Website",
+                duration: "<span class='duration'>Duration :</span> 3 weeks",
+                number: "<span class='duration'>Solo project</span>",
+                desc: `This project is a website showcasing the activity of the Carrières Sauvanet company. It was built from scratch, using HTML, CSS and Javascript. The goal was to introduce the company, their products, some of their realisations, as well as share contact information.
+                I achieved this project just as I began studying at Web@cadémie by Epitech, and I was very new to web development.`,
+                techno: [technos.html, technos.css, technos.javascript],
+                photo: "/projects/carrieres.png"
             }
-        ]
+        ],
+        contactMe : "Contact me ! I'm looking for an apprenticship !",
     },
+
     fr: {
         navProjects: "Projets",
         developer: "Développeur web",
-        desc: `Je suis un développeur web <em>Full Stack</em>, qui cherche à offrir la meilleure expérience utilisateur possible. 
-        J'aime particulièrement <em>créer des outils</em> ou services, que ce soit pour d'autres devs ou pour des utilisateurs. 
+        desc: `Je suis un développeur web < em > Full Stack</em >, qui cherche à offrir la meilleure expérience utilisateur possible.
+    J'aime particulièrement <em>créer des outils</em> ou services, que ce soit pour d'autres devs ou pour des utilisateurs.
         J'apprends actuellement le Javascript et le PHP à la <em>Web@cadémie by Epitech</em>, à Paris.`,
         timelineDescWac: "Développement Web",
         timelineHeaderFac: "University Paris 1 Panthéon-Sorbonne",
@@ -56,12 +107,69 @@ export const lang = {
         skills: "Compétences",
         projects: [
             {
+                className: "project-left",
+                id: "spotify-proj",
                 name: "Spotify Clone",
-                duration: "Durée : 2 jours",
-                number: "Projet en groupe",
-                desc: ""
+                source: "https://github.com/JeremieLeymarie/SpotifyClone",
+                duration: "<span class='duration'>Durée :</span> 2 jours",
+                number: "<span class='duration'>Projet de groupe</span>",
+                desc: `Ce projet a été réalisé pendant un rush, c'est-à-dire un projet de groupe pendant le week-end.Le but était de créer un clone de Spotify simle et fonctionnel.L'API est en PHP et renvoie ses réponses en JSON. Le front-end est construit en React.js. Le projet utilise un base de données SQL. Ce projet est mon premier projet en React. Il comporte des listes d'albums, aristes, genres et chansons, ainsi que des pages dédiées. Il est également possible d'écouter les musiques. `,
+                techno: [technos.react, technos.php, technos.sql],
+                photo: "/projects/mySpotify.png"
+            },
+            {
+                className: "project-right",
+                id: "quizz-proj",
+                name: "Quizz App",
+                source: "https://github.com/JeremieLeymarie/QuizzApp",
+                duration: "<span class='duration'>Durée :</span> 1 semaine",
+                number: "<span class='duration'>Projet de groupe</span>",
+                desc: `Le projet est une application de quizz. Nous devions utiliser Symfony pour la première fois. Le front-end est conçu avec le moteur de template de Symfony, Twig. La base de données utilisée qui nous a été donné est une base MySQL. `,
+                techno: [technos.symfony, technos.sql],
+                photo: "/projects/quizzApp.png"
+            },
+            {
+                className: "project-left",
+                id: "pie-proj",
+                source: "https://github.com/JeremieLeymarie/PiePHP",
+                name: "PiePHP Framework",
+                duration: "<span class='duration'>Durée :</span> 2 semaines",
+                number: "<span class='duration'>Projet solo</span>",
+                desc: `J'ai réalisé ce projet juste avant d'utiliser un framework web pour la première fois. L'idée du projet est de créer un mini framework PHP, en se basant sur le même principe de fonctionnement que Laravel, Symfony ou CakePHP. Le projet permet donc de construire des sites avec une architecture MVC.`,
+                techno: [technos.php],
+                photo: "/projects/PiePHP.png"
+            },
+            // {
+            //     className: "project-left",
+            //     id: "pushSwap-proj",
+            //     run: true,
+            //     source : "#",
+            //     name: "Push Swap Algorithm",
+            //     duration: "<span class='duration'>Duration :</span> 1 week",
+            //     number: "<span class='duration'>Solo project</span>",
+            //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
+            //     techno: [technos.php],
+            //     photo: "/projects/pushSwap.png"
+            // },
+            {
+                className: "project-right",
+                id: "carrieres-proj",
+                source: "https://github.com/JeremieLeymarie/carrieres_sauvanet",
+                see: "https://www.carrieres-sauvanet.com/",
+                name: "Showcase Website",
+                duration: "<span class='duration'>Durée :</span> 3 semaines",
+                number: "<span class='duration'>Solo project</span>",
+                desc: `Ce projet est un site vitrine, qui présente l'activité des Carrières Sauvanet. Je l'ai développé en commençant à zéro, en HTML, CSS et Javascript. Le but était de présenter l'entreprise, ses produits, certaines de leur réalisations, ainsi que permettre de les contacter.
+                C'est le premier site que j'ai réalisé, pendant mon temps libre, alors que je commençais mes études à la Web@cadémie by Epitech.`,
+                techno: [technos.html, technos.css, technos.javascript],
+                photo: "/projects/carrieres.png"
             }
-        ]
-    },
+        ],
+    contactMe : "Contacte moi ! Je cherche une alternance !",
+
+    }
 }
+
+
+
 export const LangContext = React.createContext(lang.eng);

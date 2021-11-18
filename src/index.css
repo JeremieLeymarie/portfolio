@@ -26,3 +26,9 @@ a{
 ul{
   padding-inline-start : 0px; 
 }
+
+input{
+  outline : none; 
+  border: none;
+  background : transparent; 
+}
