@@ -1,6 +1,5 @@
 import './App.css';
-import React, { useState, useContext } from 'react';
-import { Lang } from "./LangContext";
+import React, { } from 'react';
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LanguageProvider from "./Components/LanguageProvider";
 import Navbar from './Components/Navbar';
@@ -9,11 +8,18 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 
 function App() {
+
+  function changeActiveItem(id) {
+    console.log("in")
+    document.getElementsByClassName("active-nav-item")[0].classList.remove("active-nav-item");
+    document.getElementById(id).classList.add("active-nav-item");
+  }
+
   return (
     <div className="App">
       <Router>
         <LanguageProvider>
-          <Navbar />
+          <Navbar click={changeActiveItem}/>
           <Routes>
             <Route path="/bio" element={<Bio />} />
             <Route path="/" element={<Bio />} />

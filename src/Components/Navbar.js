@@ -2,16 +2,11 @@ import { useContext } from "react";
 import { LangContext } from "../LangContext";
 import { Box } from "@mui/material";
 import LanguageSwitch from "./LanguageSwitch";
-import { Link, Router } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
     const lang = useContext(LangContext).lang;
-
-    function changeActiveItem(e) {
-        document.getElementsByClassName("active-nav-item")[0].classList.remove("active-nav-item");
-        document.getElementById(e.target.id).classList.add("active-nav-item");
-    }
-
+    console.log(props.click); 
     return (
         <Box sx={{
             display: "flex",
@@ -21,13 +16,13 @@ export default function Navbar(props) {
             color: "#9388A2",
         }}>
             <Box sx={{ display: "flex", gap: "1.5rem", }}>
-                <Link to="/bio" id="bio" className="nav-item active-nav-item" onClick={(e) => changeActiveItem(e)}>
+                <Link to="/bio" id="bio" className="nav-item active-nav-item" onClick={()=>props.click("bio")}>
                     Bio
                 </Link> -
-                <Link to="/projects" id="projects" className="nav-item" onClick={(e) => changeActiveItem(e)}>
+                <Link to="/projects" id="projects" className="nav-item" onClick={()=>props.click("projects")}>
                     {lang.navProjects}
                 </Link> -
-                <Link to="/contact" id="contact" className="nav-item" onClick={(e) => changeActiveItem(e)}>
+                <Link to="/contact" id="contact" className="nav-item" onClick={()=>props.click("contact")}>
                     Contact
                 </Link>
             </Box>

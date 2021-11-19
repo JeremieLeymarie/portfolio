@@ -81,7 +81,13 @@ export const lang = {
                 photo: "/projects/carrieres.png"
             }
         ],
-        contactMe : "Contact me ! I'm looking for an apprenticship !",
+        contactMe: "Contact me ! I'm looking for an apprenticeship !",
+        messagePlaceholder: "Write your message here...",
+        emailPlaceholder: "your email adress...",
+        msgError: "Please write a message",
+        emailError: "Please tell me your email adress...",
+        error: "Something went wrong, please try again later",
+        emailSuccess : "Message sent ! Thank you !",
     },
 
     fr: {
@@ -165,8 +171,13 @@ export const lang = {
                 photo: "/projects/carrieres.png"
             }
         ],
-    contactMe : "Contacte moi ! Je cherche une alternance !",
-
+        contactMe: "Contacte moi ! Je cherche une alternance !",
+        messagePlaceholder: "Ecrivez votre message ici...",
+        emailPlaceholder: "votre adresse mail...",
+        msgError: "Entrez un message avant d'envoyer",
+        emailError: "Vous devez renseigner votre adresse mail...",
+        error: "Quelque chose n'a pas fonctionné, veuillez réessayer plus tard.",
+        emailSuccess : "Message envoyé ! Merci !",
     }
 }
 

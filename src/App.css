@@ -18,6 +18,18 @@ body {
 .nav-item {
   cursor: pointer;
   transition: color .5s ease;
+  display: inline-block;     
+  /* Increase clickable area of the anchor tag */
+  position: relative;    
+  z-index: 1;     
+  padding: .5em;     
+  margin: -.5em; 
+}
+
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root{
+  background-color : #EF476F !important;
+  /* border-radius : .5rem !important;  */
+  font-family: "Raleway" !important;
 }
 
 .nav-item:hover {
@@ -273,6 +285,11 @@ ul {
   fill: #001D3D;
 }
 
+.MuiCircularProgress-root {
+  height: 24px !important;
+  width: 24px !important;
+}
+
 .contact-header {
   color: #A3EBB1;
   font-size: 1.5rem;
@@ -306,8 +323,8 @@ ul {
   position: relative;
   border-radius: 1.8rem;
   border: 2px solid #21B6A8;
-  background : transparent;
-  color : white;
+  background: transparent;
+  color: white;
   max-width: 600px;
   min-width: 25rem;
   min-height: 200px;
@@ -318,8 +335,8 @@ ul {
 }
 
 .email-container {
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .outer-rect-contact {
@@ -329,7 +346,7 @@ ul {
   border-radius: 1.8rem;
   border: 2px solid #21B6A8;
   padding: 1.5rem;
-  position : relative; 
+  position: relative;
 }
 
 .email-input:empty:not(:focus):before {
@@ -347,6 +364,10 @@ ul {
   justify-content: space-evenly;
   gap: 5rem;
   align-items: center;
+  background-color: #001D3D;
+  border-radius: 1rem;
+  padding: 4rem 0rem;
+  margin: 3rem 0rem;
 }
 
 .contact-wrapper {

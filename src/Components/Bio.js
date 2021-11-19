@@ -21,11 +21,16 @@ export default function Bio(props) {
     useEffect(() => {
         window.addEventListener("scroll", () => {
             let arrow = document.getElementById("arrow");
-            if (window.scrollY > 0) {
-                arrow.style.visibility = "hidden";
-            }
-            else {
-                arrow.style.visibility = "visible";
+            try {
+
+                if (window.scrollY > 0) {
+                    arrow.style.visibility = "hidden";
+                }
+                else {
+                    arrow.style.visibility = "visible";
+                }
+            } catch (error) {
+                console.log(error)
             }
         });
     }, []);
@@ -159,4 +164,6 @@ function Experiences() {
         </Box>
     );
 }
+
+
 

@@ -16,7 +16,8 @@ export default function Skills() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            const offset = document.getElementById("skills-wrapper").getBoundingClientRect();
+            try {
+            const offset = document.getElementById( "skills-wrapper").getBoundingClientRect();
 
             if (offset.top >= 0 && offset.bottom <= window.innerHeight) {
                 setHtmlProgress(90);
@@ -28,6 +29,9 @@ export default function Skills() {
                 setLinuxProgress(60);
                 setSQLProgress(90);
             }
+        } catch (error) {
+            console.log(error)
+        }
         });
     }, []);
 
