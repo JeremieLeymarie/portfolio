@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
     const lang = useContext(LangContext).lang;
-    console.log(props.click); 
     return (
         <Box sx={{
             display: "flex",

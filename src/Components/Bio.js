@@ -11,6 +11,7 @@ import React, { useContext, useEffect } from "react";
 import { LangContext } from "../LangContext";
 import Skills from "./Skills";
 import Socials from "./Socials";
+import Cloud from "./Cloud";
 
 export default function Bio(props) {
     const lang = useContext(LangContext).lang;
@@ -19,6 +20,7 @@ export default function Bio(props) {
     }
 
     useEffect(() => {
+
         window.addEventListener("scroll", () => {
             let arrow = document.getElementById("arrow");
             try {
@@ -53,12 +55,14 @@ export default function Bio(props) {
                     <KeyboardArrowDownOutlinedIcon id="arrow" className="arrow" sx={{ color: "white", fontSize: "45px" }} />
                 </Box>
             </Grid >
-
             <Box sx={{ display: "flex", width: "100%", justifyContent: "space-evenly" }}>
                 <Formation />
                 <Skills />
             </Box>
-            <Experiences />
+                <Cloud style={{ position: "absolute", top : "5px" }} />
+            <Box sx={{position : "relative"}}>
+                <Experiences />
+            </Box>
         </Box >
 
     );
@@ -113,7 +117,7 @@ function Experiences() {
     const lang = useContext(LangContext).lang;
 
     return (
-        <Box sx={{ marginBottom: "2rem", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
+        <Box sx={{ marginBottom: "5rem", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
             <Box className="title">Experiences</Box>
             <Timeline className="experience-wrapper" id="timeline" position="alternate" sx={{ color: "white", padding: "0px", width: "max-content", display: "flex", justifyContent: "center", margin: "0px" }}>
                 <TimelineItem className="timeline-item">

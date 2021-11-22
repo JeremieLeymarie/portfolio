@@ -4,7 +4,6 @@ import { Box } from "@mui/material";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 // import { duotoneSea, a11yDark, dracula } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-
 export default function Projects(props) {
     const projects = useContext(LangContext).lang.projects;
     return (
@@ -27,6 +26,7 @@ function Project({ data }) {
     }
 
     return (
+
         <Box className={"project-wrapper " + data.className}>
             <a rel="noreferrer" href={data.see ? data.see : data.source} target="_blank"
                 className="project-img"

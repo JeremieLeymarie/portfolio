@@ -5,7 +5,7 @@ export const lang = {
     eng: {
         navProjects: "Projects",
         developer: "Web developer",
-        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible. I especially like<em>creating tools</em> whether it is for other devs or regular users.Currently learning (mostly) Javascript & PHP stacks at <em> Web@cademie by Epitech</em>, in Paris.`,
+        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible. I especially like<em> creating tools</em> whether it is for other devs or regular users.Currently learning (mostly) Javascript & PHP stacks at <em> Web@cademie by Epitech</em>, in Paris.`,
         timelineDescWac: "Web development",
         timelineHeaderFac: "University Paris 1 Panthéon-Sorbonne",
         timelineDescFac: "Philosophy & History",
@@ -21,6 +21,7 @@ export const lang = {
         expHeaderISG: "Instructor in web development - ISG",
         expDescISG: "Tutoring ISG (Business school) students in the making of a website, using HTML, CSS & JQuery for the API calls. 1 week.",
         skills: "Skills",
+        cloud : ["chess", "philosophy", "history", "french cooking", "italian cooking", "horror movies", "code"],
         projects: [
             {
                 className: "project-left",
@@ -93,7 +94,7 @@ export const lang = {
     fr: {
         navProjects: "Projets",
         developer: "Développeur web",
-        desc: `Je suis un développeur web < em > Full Stack</em >, qui cherche à offrir la meilleure expérience utilisateur possible.
+        desc: `Je suis un développeur web <em> Full Stack</em >, qui cherche à offrir la meilleure expérience utilisateur possible.
     J'aime particulièrement <em>créer des outils</em> ou services, que ce soit pour d'autres devs ou pour des utilisateurs.
         J'apprends actuellement le Javascript et le PHP à la <em>Web@cadémie by Epitech</em>, à Paris.`,
         timelineDescWac: "Développement Web",
@@ -110,6 +111,7 @@ export const lang = {
         expDescTheater: `Interprétation du rôle de Michel Morin, dans la première mondiale de "l'Opéra de Lune", de Prévert et mis en scène par Damien Caille-Perret`,
         expHeaderISG: "Assistant de formation en développement web - ISG",
         expDescISG: "Tutorat pour l'ISG (Ecole de commerce) pour la création d'un site web, réalisé en HTML, CSS et JQuery pour les calls API. 1 semaine",
+        cloud : ["échecs", "philosophie", "histoire", "cuisine française", "cuisine italienne", "films d'horreur", "code"],
         skills: "Compétences",
         projects: [
             {

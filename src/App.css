@@ -18,16 +18,16 @@ body {
 .nav-item {
   cursor: pointer;
   transition: color .5s ease;
-  display: inline-block;     
+  display: inline-block;
   /* Increase clickable area of the anchor tag */
-  position: relative;    
-  z-index: 1;     
-  padding: .5em;     
-  margin: -.5em; 
+  position: relative;
+  z-index: 1;
+  padding: .5em;
+  margin: -.5em;
 }
 
-.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root{
-  background-color : #EF476F !important;
+.css-1eqdgzv-MuiPaper-root-MuiSnackbarContent-root {
+  background-color: #EF476F !important;
   /* border-radius : .5rem !important;  */
   font-family: "Raleway" !important;
 }
@@ -89,6 +89,7 @@ ul {
 .experience-wrapper {
   display: flex;
   justify-content: center;
+  margin-bottom : 5rem; 
 }
 
 .title {
@@ -97,6 +98,7 @@ ul {
   margin-bottom: 4rem;
   width: 100%;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .fade-in {
@@ -231,7 +233,31 @@ ul {
   cursor: pointer;
   transition: transform .35s ease;
   background-color: black;
-  border: 2px solid black
+  display : block;
+  /* border: 2px solid black; */
+  position: relative;
+}
+
+.project-img:before {
+  content: "";
+  position: absolute;
+  top: -3rem;
+  right: -3rem;
+  bottom: -2rem;
+  left: -2rem;
+  border: 2px solid #21B6A8;
+  border-radius: 2rem;
+}
+
+.project-img:after {
+  content: "";
+  position: absolute;
+  top: -2rem;
+  right: -2rem;
+  bottom: -3rem;
+  left: -3rem;
+  border: 2px solid #21B6A8;
+  border-radius: 2rem;
 }
 
 /* 
@@ -360,6 +386,7 @@ ul {
 
 .contact-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: space-evenly;
   gap: 5rem;
@@ -370,13 +397,40 @@ ul {
   margin: 3rem 0rem;
 }
 
+.contact-flex{
+  /* display : flex;  */
+  /* justify-content: space-evenly; */
+}
+
 .contact-wrapper {
   color: white;
 }
 
-/* .contact-input:focus{
-  border-width: 2px;
-} */
+
+.tagcloud--item {
+  margin : 2rem !important; 
+  font-size: 1.5rem !important;
+  height : 100px !important; 
+  width : 100px !important;
+}
+
+
+#word-cloud{
+  margin-bottom : 5rem; 
+}
+
+.hobby-container{
+  display : flex;
+  align-items : center; 
+  justify-content : space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.hobbies{
+  width : 30%; 
+  color : #21B6A8; 
+}
 
 @keyframes fadeIn {
   from {
