@@ -5,7 +5,7 @@ export const lang = {
     eng: {
         navProjects: "Projects",
         developer: "Web developer",
-        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible. I especially like<em> creating tools</em> whether it is for other devs or regular users.Currently learning (mostly) Javascript & PHP stacks at <em> Web@cademie by Epitech</em>, in Paris.`,
+        desc: `I'm a <em>Full Stack</em> web developer who enjoys providing the best user experience possible. I especially like<em> creating tools</em> whether it is for other devs or regular users. Currently learning (mostly) Javascript & PHP stacks at <em> Web@cademie by Epitech</em>, in Paris.`,
         timelineDescWac: "Web development",
         timelineHeaderFac: "University Paris 1 Panthéon-Sorbonne",
         timelineDescFac: "Philosophy & History",
@@ -121,7 +121,7 @@ export const lang = {
                 source: "https://github.com/JeremieLeymarie/SpotifyClone",
                 duration: "<span class='duration'>Durée :</span> 2 jours",
                 number: "<span class='duration'>Projet de groupe</span>",
-                desc: `Ce projet a été réalisé pendant un rush, c'est-à-dire un projet de groupe pendant le week-end.Le but était de créer un clone de Spotify simle et fonctionnel.L'API est en PHP et renvoie ses réponses en JSON. Le front-end est construit en React.js. Le projet utilise un base de données SQL. Ce projet est mon premier projet en React. Il comporte des listes d'albums, aristes, genres et chansons, ainsi que des pages dédiées. Il est également possible d'écouter les musiques. `,
+                desc: `Ce projet a été réalisé pendant un rush, c'est-à-dire un projet de groupe pendant le week-end.Le but était de créer un clone de Spotify simle et fonctionnel. L'API est en PHP et renvoie ses réponses en JSON. Le front-end est construit en React.js. Le projet utilise un base de données SQL. Ce projet est mon premier projet en React. Il comporte des listes d'albums, aristes, genres et chansons, ainsi que des pages dédiées. Il est également possible d'écouter les musiques. `,
                 techno: [technos.react, technos.php, technos.sql],
                 photo: "/projects/mySpotify.png"
             },

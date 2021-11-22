@@ -2,7 +2,7 @@ import { Box } from "@mui/material";
 
 export default function Socials() {
     return (
-        <Box sx={{ marginTop: "2rem", display: "flex", gap: "2rem", justifyContent: "space-evenly" }}>
+        <Box className="align-center socials" sx={{ marginTop: "2rem", display: "flex", gap: "2rem", justifyContent: "space-evenly" }}>
             <a rel="noreferrer"href="https://github.com/JeremieLeymarie" target="_blank" alt="GitHub Profile Jérémie Leymarie web developper">
                 <svg
                     className="social-icon"

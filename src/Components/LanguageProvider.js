@@ -7,6 +7,7 @@ export default function LanguageProvider(props) {
         e.target.id === "fr" ? setState(lang.fr) : setState(lang.eng);
         document.getElementsByClassName("active-lang")[0].classList.remove("active-lang");
         document.getElementById(e.target.id).classList.add("active-lang");
+        
     }
     return (
         <LangContext.Provider value={{

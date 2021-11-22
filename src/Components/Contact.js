@@ -77,7 +77,7 @@ export default function Contact(props) {
                 </a>
             </Box>
             <form ref={form} className="contact-container" onSubmit={sendEmail}>
-                <Box sx={{ border: "2px solid #21B6A8", width: "max-content", height: "max-content", padding: "1.8rem 3rem", borderRadius: "1.5rem" }}>
+                <Box className="email-wrapper" sx={{ border: "2px solid #21B6A8", width: "max-content", height: "max-content", padding: "1.8rem 3rem", borderRadius: "1.5rem" }}>
                     <input name="address" type="email" id="email-adress" className="contact-input" placeholder={lang.emailPlaceholder} />
                 </Box>
                 <Box className="outer-rect-contact" >

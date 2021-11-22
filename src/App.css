@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   background-color: #050A30;
+  width : 100%; 
   /* 001D3D */
 }
 
@@ -397,10 +398,6 @@ ul {
   margin: 3rem 0rem;
 }
 
-.contact-flex{
-  /* display : flex;  */
-  /* justify-content: space-evenly; */
-}
 
 .contact-wrapper {
   color: white;

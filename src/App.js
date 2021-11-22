@@ -1,4 +1,5 @@
 import './App.css';
+import './responsive.css';
 import React, { } from 'react';
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import LanguageProvider from "./Components/LanguageProvider";
@@ -10,7 +11,6 @@ import Contact from "./Components/Contact";
 function App() {
 
   function changeActiveItem(id) {
-    console.log("in")
     document.getElementsByClassName("active-nav-item")[0].classList.remove("active-nav-item");
     document.getElementById(id).classList.add("active-nav-item");
   }

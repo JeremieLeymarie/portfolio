@@ -13,7 +13,8 @@ export default function Navbar(props) {
             alignItems: "center",
             fontSize: "1.5rem",
             color: "#9388A2",
-        }}>
+        }}
+        className="navbar">
             <Box sx={{ display: "flex", gap: "1.5rem", }}>
                 <Link to="/bio" id="bio" className="nav-item active-nav-item" onClick={()=>props.click("bio")}>
                     Bio

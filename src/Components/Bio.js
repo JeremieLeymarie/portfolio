@@ -43,24 +43,24 @@ export default function Bio(props) {
                 <Grid item xs={4} >
                     <Avatar className="portrait" sx={{ width: "300px", height: "300px", maxWidth: "600px", marginTop: "-5rem" }} alt="Jérémie Leymarie" src="/portrait.jpg" />
                 </Grid>
-                <Grid item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
-                    <Box sx={{ display: "flex", alignItems: "flex-end", flexDirection: "column", marginTop: "-2rem" }}>
-                        <Box sx={{ fontSize: "1.75rem", fontWeight: "500", color: "white" }}>Jérémie Leymarie</Box>
-                        <Box sx={{ color: "#9388A2", fontSize: "1.15rem", fontWeight: "500", marginBottom: "2.5rem", marginTop: ".5rem" }}>{lang.developer}</Box>
-                        <Box sx={{ color: "#21B6A8", fontSize: "1.15rem", fontWeight: "500", width: "70%" }}>{renderHtml(lang.desc)}</Box>
-                        <Socials />
+                <Grid className="alignRight bio-text" item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
+                    <Box className="bio-box"  sx={{ display: "flex", alignItems: "flex-end", flexDirection: "column", marginTop: "-2rem" }}>
+                        <Box className="desc" sx={{ fontSize: "1.75rem", fontWeight: "500", color: "white" }}>Jérémie Leymarie</Box>
+                        <Box className="desc" sx={{ color: "#9388A2", fontSize: "1.15rem", fontWeight: "500", marginBottom: "2.5rem", marginTop: ".5rem" }}>{lang.developer}</Box>
+                        <Box className="desc" sx={{ color: "#21B6A8", fontSize: "1.15rem", fontWeight: "500", width: "70%" }}>{renderHtml(lang.desc)}</Box>
+                        <Socials className="desc"/>
                     </Box>
                 </Grid>
-                <Box sx={{ width: "100%", display: "flex", justifyContent: "center", position: "absolute", bottom: "0px" }}>
+                <Box  sx={{ width: "100%", display: "flex", justifyContent: "center", position: "absolute", bottom: "0px" }}>
                     <KeyboardArrowDownOutlinedIcon id="arrow" className="arrow" sx={{ color: "white", fontSize: "45px" }} />
                 </Box>
             </Grid >
-            <Box sx={{ display: "flex", width: "100%", justifyContent: "space-evenly" }}>
+            <Box className="firstBox" sx={{ display: "flex", width: "100%", justifyContent: "space-evenly" }}>
                 <Formation />
                 <Skills />
             </Box>
-                <Cloud style={{ position: "absolute", top : "5px" }} />
-            <Box sx={{position : "relative"}}>
+            <Cloud style={{ position: "absolute", top: "5px" }} />
+            <Box sx={{ position: "relative" }}>
                 <Experiences />
             </Box>
         </Box >
@@ -119,7 +119,15 @@ function Experiences() {
     return (
         <Box sx={{ marginBottom: "5rem", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center" }}>
             <Box className="title">Experiences</Box>
-            <Timeline className="experience-wrapper" id="timeline" position="alternate" sx={{ color: "white", padding: "0px", width: "max-content", display: "flex", justifyContent: "center", margin: "0px" }}>
+            <Timeline className="experience-wrapper" id="timeline" position="alternate" sx={{
+                maxWidth: "100%",
+                color: "white",
+                padding: "0px",
+                width: "max-content",
+                display: "flex",
+                justifyContent: "center",
+                margin: "0px"
+            }}>
                 <TimelineItem className="timeline-item">
                     <TimelineSeparator >
                         <TimelineDot variant="outlined" sx={{ borderColor: "#21B6A8" }} />
