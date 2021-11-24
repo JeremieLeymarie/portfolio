@@ -2,8 +2,12 @@
   display: flex;
   justify-content: center;
   background-color: #050A30;
-  width : 100%; 
+  width: 100%;
   /* 001D3D */
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -90,7 +94,7 @@ ul {
 .experience-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom : 5rem; 
+  margin-bottom: 5rem;
 }
 
 .title {
@@ -160,16 +164,18 @@ ul {
   /* text-decoration: underline; */
   border-bottom: 1px #9388A2 solid;
   font-size: .8rem;
+  transition: all .75s ease;
+}
+
+.project-github:hover, .project-test:hover{
+  color : white; 
+  border-color: white;
 }
 
 .project-test {
   color: #9388A2;
   cursor: pointer;
   transition: all .5s ease;
-}
-
-.project-test:hover {
-  /* transform : scale(1.1) */
 }
 
 .underline {
@@ -234,7 +240,7 @@ ul {
   cursor: pointer;
   transition: transform .35s ease;
   background-color: black;
-  display : block;
+  display: block;
   /* border: 2px solid black; */
   position: relative;
 }
@@ -405,28 +411,28 @@ ul {
 
 
 .tagcloud--item {
-  margin : 2rem !important; 
+  margin: 2rem !important;
   font-size: 1.5rem !important;
-  height : 100px !important; 
-  width : 100px !important;
+  height: 100px !important;
+  width: 100px !important;
 }
 
 
-#word-cloud{
-  margin-bottom : 5rem; 
+#word-cloud {
+  margin-bottom: 5rem;
 }
 
-.hobby-container{
-  display : flex;
-  align-items : center; 
-  justify-content : space-evenly;
+.hobby-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-.hobbies{
-  width : 30%; 
-  color : #21B6A8; 
+.hobbies {
+  width: 30%;
+  color: #21B6A8;
 }
 
 .css-1ewvi9k-MuiSnackbar-root, .css-16cb7zl-MuiSnackbar-root {
