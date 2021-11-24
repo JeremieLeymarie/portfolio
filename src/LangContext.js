@@ -32,7 +32,8 @@ export const lang = {
                 number: "<span class='duration'>Group project</span>",
                 desc: `This project was done during a rush, i.e a week-end group project. The goal was to create a basic functionnal Spotify clone. The API had to be built in PHP. It sends JSON response to the React.js front-end. We were given a SQL database. It was the first project we ever did using React.js. It features, albums, artists, genres & songs listings and pages. Songs are playable. `,
                 techno: [technos.react, technos.php, technos.sql],
-                photo: "/projects/mySpotify.png"
+                photo: "/projects/mySpotify.png",
+                tags : ["web", "react", "php", "sql", "group", "spotify", "clone", "back-end", "backend", "front-end", "frontend", "fullStack", "full-stack", "short", "api"],
             },
             {
                 className: "project-right",
@@ -43,7 +44,8 @@ export const lang = {
                 number: "<span class='duration'>Group project</span>",
                 desc: `The project was to create a simple quizz app. We had to use Symfony for the first time. The front-end is based on Symfony's templating engine Twig. A small SQL database was given with the assignment. `,
                 techno: [technos.symfony, technos.sql],
-                photo: "/projects/quizzApp.png"
+                photo: "/projects/quizzApp.png",
+                tags : ["symfony", "web", "php", "sql", "group", "quizz", "back-end", "backend", "front-end", "frontend", "fullstack", "full-stack", "long"],
             },
             {
                 className: "project-left",
@@ -53,8 +55,9 @@ export const lang = {
                 duration: "<span class='duration'>Duration :</span> 2 weeks",
                 number: "<span class='duration'>Solo project</span>",
                 desc: `I achieved this project, juste before using a web framework for the first time. The goal was to create a mini PHP framework, using the same basic principles Symfony, Laravel or CakePHP use. It follows the MVC pattern.`,
-                techno: [technos.php],
-                photo: "/projects/PiePHP.png"
+                techno: [technos.php, technos.sql],
+                photo: "/projects/PiePHP.png",
+                tags : ["web","php", "sql", "group", "orm", "framework", "back-end", "backend", "long"],
             },
             // {
             //     className: "project-left",
@@ -79,7 +82,8 @@ export const lang = {
                 desc: `This project is a website showcasing the activity of the Carrières Sauvanet company. It was built from scratch, using HTML, CSS and Javascript. The goal was to introduce the company, their products, some of their realisations, as well as share contact information.
                 I achieved this project just as I began studying at Web@cadémie by Epitech, and I was very new to web development.`,
                 techno: [technos.html, technos.css, technos.javascript],
-                photo: "/projects/carrieres.png"
+                photo: "/projects/carrieres.png",
+                tags : ["html", "css", "js", "javascript", "vanilla", "web", "showcase", "vitrine", "front-end", "frontend", "long"],
             }
         ],
         contactMe: "Contact me ! I'm looking for an apprenticeship !",
@@ -123,7 +127,8 @@ export const lang = {
                 number: "<span class='duration'>Projet de groupe</span>",
                 desc: `Ce projet a été réalisé pendant un rush, c'est-à-dire un projet de groupe pendant le week-end.Le but était de créer un clone de Spotify simle et fonctionnel. L'API est en PHP et renvoie ses réponses en JSON. Le front-end est construit en React.js. Le projet utilise un base de données SQL. Ce projet est mon premier projet en React. Il comporte des listes d'albums, aristes, genres et chansons, ainsi que des pages dédiées. Il est également possible d'écouter les musiques. `,
                 techno: [technos.react, technos.php, technos.sql],
-                photo: "/projects/mySpotify.png"
+                photo: "/projects/mySpotify.png", 
+                tags : ["react", "php", "sql", "group", "spotify", "clone", "back-end", "backend", "front-end", "frontend", "fullStack", "full-stack", "short", "API"],
             },
             {
                 className: "project-right",
@@ -173,7 +178,7 @@ export const lang = {
                 photo: "/projects/carrieres.png"
             }
         ],
-        contactMe: "Contacte moi ! Je cherche une alternance !",
+        contactMe: "Contactez moi ! Je cherche une alternance !",
         messagePlaceholder: "Ecrivez votre message ici...",
         emailPlaceholder: "votre adresse mail...",
         msgError: "Entrez un message avant d'envoyer",

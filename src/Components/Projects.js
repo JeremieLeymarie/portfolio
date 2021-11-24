@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, /*useState,  useEffect */ } from "react";
 import { LangContext } from "../LangContext";
 import { Box } from "@mui/material";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -6,8 +6,33 @@ import { Box } from "@mui/material";
 
 export default function Projects(props) {
     const projects = useContext(LangContext).lang.projects;
+    // const [filteredProjects, setProjects] = useState(projects);
+    // const [searchValue, setSearch] = useState(null);
+
+    // useEffect(() => {
+    //     search(searchValue);
+    // }, [search]);
+
+    // function search(value) {
+    //     let tmp = [];
+    //     if (value !== null) {
+    //         projects.forEach((e) => {
+    //             e.tags.forEach((tag)=>{
+    //                 if(tag.startsWith(value)){
+    //                     tmp.push(e);
+    //                 }
+    //             });
+    //         })
+    //     }
+    //     if (tmp.length === 0) {
+    //         setProjects(projects);
+    //     } else {
+    //         setProjects(tmp);
+    //     }
+    // }
     return (
-        <Box sx={{ fontWeight: 600 }}>
+        <Box sx={{ fontWeight: 600, minHeight: "91vh" }}>
+            {/* <input onChange={(e) => setSearch(e.target.value)} style={{ backgroundColor: "white" }} type="text" id="search" /> */}
             {
                 projects.map((e) => {
                     return (

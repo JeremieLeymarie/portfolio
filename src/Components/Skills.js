@@ -11,30 +11,40 @@ export default function Skills() {
     const [gitProgress, setGitProgress] = useState(0);
     const [linuxProgress, setLinuxProgress] = useState(0);
     const [SQLProgress, setSQLProgress] = useState(0);
-    
+
     const lang = useContext(LangContext).lang;
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
             try {
-            const offset = document.getElementById( "skills-wrapper").getBoundingClientRect();
+                const offset = document.getElementById("skills-wrapper").getBoundingClientRect();
 
-            if (offset.top >= 0 && offset.bottom <= window.innerHeight) {
-                setHtmlProgress(90);
-                setJsProgress(90);
-                setPhpProgress(85);
-                setMERNProgress(65);
-                setSymfonyProgress(50);
-                setGitProgress(70);
-                setLinuxProgress(60);
-                setSQLProgress(90);
+                //If the element is bigger than the viewport, we load it when the top is in the viewport. 
+                if (window.innerHeight <= document.getElementById("skills-wrapper").offsetHeight && offset.bottom <= window.innerHeight) {
+                    setValues();
+                }
+                if (offset.top >= 0 && offset.bottom <= window.innerHeight) {
+                    setValues();
+                }
+
+            } catch (error) {
+                // console.log(error)
             }
-        } catch (error) {
-            console.log(error)
-        }
         });
     }, []);
 
+    function setValues() {
+        setHtmlProgress(90);
+        setJsProgress(80);
+        setPhpProgress(70);
+        setMERNProgress(55);
+        setSymfonyProgress(50);
+        setGitProgress(65);
+        setLinuxProgress(50);
+        setSQLProgress(85);
+    }
+
+  
 
     return (
         <Box id="skills-wrapper">
@@ -55,10 +65,10 @@ export default function Skills() {
                 <Box sx={{ width: "150px" }}>MERN</Box>
                 <LinearProgress variant="determinate" className="skill-bar" value={MERNProgress} sx={progressBarStyle} />
             </Box>
-            <Box className="skill">
+            {/* <Box className="skill">
                 <Box sx={{ width: "150px" }}>HTML/CSS</Box>
                 <LinearProgress variant="determinate" className="skill-bar" value={htmlProgress} sx={progressBarStyle} />
-            </Box>
+            </Box> */}
             <Box className="skill">
                 <Box sx={{ width: "150px" }}>Symfony/Laravel</Box>
                 <LinearProgress variant="determinate" className="skill-bar" value={symfonyProgress} sx={progressBarStyle} />

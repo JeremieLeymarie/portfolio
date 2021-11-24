@@ -6,7 +6,7 @@ export default function Cloud() {
     const lang = useContext(LangContext).lang;
     const mediaQuery = window.matchMedia("(max-width : 400px)");
     const container = "#word-cloud";
-    const options = { radius: 180 };
+    // const options = { radius: 180 };
     const [radius, setRadius] = useState(180);
     let cloud;
 

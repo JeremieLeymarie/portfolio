@@ -429,6 +429,12 @@ ul {
   color : #21B6A8; 
 }
 
+.css-1ewvi9k-MuiSnackbar-root, .css-16cb7zl-MuiSnackbar-root {
+  justify-content: flex-start !important;
+}
+
+
+
 @keyframes fadeIn {
   from {
     transform: translateY(200px);
