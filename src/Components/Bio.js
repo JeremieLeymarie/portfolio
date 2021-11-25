@@ -47,7 +47,7 @@ export default function Bio(props) {
         <Box>
             <Grid container spacing={2} className="bio-wrapper">
                 <Grid item xs={4} >
-                    <Avatar className="portrait" sx={{ width: "300px", height: "300px", maxWidth: "600px", marginTop: "-5rem" }} alt="Jérémie Leymarie" src="/portrait.jpg" />
+                    <Avatar className="portrait" sx={{ width: "300px", height: "300px", maxWidth: "600px", marginTop: "-5rem" }} alt="Jérémie Leymarie" src="/portfolio/portrait.jpg" />
                 </Grid>
                 <Grid className="alignRight bio-text" item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
                     <Box className="bio-box" sx={{ display: "flex", alignItems: "flex-end", flexDirection: "column", marginTop: "-2rem" }}>

@@ -24,10 +24,10 @@ function App() {
         <LanguageProvider>
           <Navbar click={changeActiveItem} />
           <Routes>
-            <Route path="/bio" element={<Bio click={changeActiveItem} />} />
-            <Route path="/" element={<Bio click={changeActiveItem} />} />
-            <Route path="/projects" element={<Projects click={changeActiveItem} />} />
-            <Route path="/contact" element={<Contact click={changeActiveItem} />} />
+            <Route path="/portfolio/bio" element={<Bio click={changeActiveItem} />} />
+            <Route path="/portfolio/" element={<Bio click={changeActiveItem} />} />
+            <Route path="/portfolio/projects" element={<Projects click={changeActiveItem} />} />
+            <Route path="/portfolio/contact" element={<Contact click={changeActiveItem} />} />
           </Routes>
         </LanguageProvider>
       </Router>

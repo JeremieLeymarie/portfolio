@@ -33,7 +33,7 @@ export const lang = {
                 number: "<span class='duration'>Group project</span>",
                 desc: `This project was done during a rush, i.e a week-end group project. The goal was to create a basic functionnal Spotify clone. The API had to be built in PHP. It sends JSON response to the React.js front-end. We were given a SQL database. It was the first project we ever did using React.js. It features, albums, artists, genres & songs listings and pages. Songs are playable. `,
                 techno: [technos.react, technos.php, technos.sql],
-                photo: "/projects/mySpotify.png",
+                photo: "/portfolio/projects/mySpotify.png",
                 tags : ["web", "react", "php", "sql", "group", "spotify", "clone", "back-end", "backend", "front-end", "frontend", "fullStack", "full-stack", "short", "api"],
             },
             {
@@ -45,7 +45,7 @@ export const lang = {
                 number: "<span class='duration'>Group project</span>",
                 desc: `The project was to create a simple quizz app. We had to use Symfony for the first time. The front-end is based on Symfony's templating engine Twig. A small SQL database was given with the assignment. `,
                 techno: [technos.symfony, technos.sql],
-                photo: "/projects/quizzApp.png",
+                photo: "/portfolio/projects/quizzApp.png",
                 tags : ["symfony", "web", "php", "sql", "group", "quizz", "back-end", "backend", "front-end", "frontend", "fullstack", "full-stack", "long"],
             },
             {
@@ -57,7 +57,7 @@ export const lang = {
                 number: "<span class='duration'>Solo project</span>",
                 desc: `I achieved this project, juste before using a web framework for the first time. The goal was to create a mini PHP framework, using the same basic principles Symfony, Laravel or CakePHP use. It follows the MVC pattern.`,
                 techno: [technos.php, technos.sql],
-                photo: "/projects/PiePHP.png",
+                photo: "/portfolio/projects/PiePHP.png",
                 tags : ["web","php", "sql", "group", "orm", "framework", "back-end", "backend", "long"],
             },
             // {
@@ -70,7 +70,7 @@ export const lang = {
             //     number: "<span class='duration'>Solo project</span>",
             //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
             //     techno: [technos.php],
-            //     photo: "/projects/pushSwap.png"
+            //     photo: "/portfolio/projects/pushSwap.png"
             // },
             {
                 className: "project-right",
@@ -83,7 +83,7 @@ export const lang = {
                 desc: `This project is a website showcasing the activity of the Carrières Sauvanet company. It was built from scratch, using HTML, CSS and Javascript. The goal was to introduce the company, their products, some of their realisations, as well as share contact information.
                 I achieved this project just as I began studying at Web@cadémie by Epitech, and I was very new to web development.`,
                 techno: [technos.html, technos.css, technos.javascript],
-                photo: "/projects/carrieres.png",
+                photo: "/portfolio/projects/carrieres.png",
                 tags : ["html", "css", "js", "javascript", "vanilla", "web", "showcase", "vitrine", "front-end", "frontend", "long"],
             }
         ],
@@ -129,7 +129,7 @@ export const lang = {
                 number: "<span class='duration'>Projet de groupe</span>",
                 desc: `Ce projet a été réalisé pendant un rush, c'est-à-dire un projet de groupe pendant le week-end.Le but était de créer un clone de Spotify simle et fonctionnel. L'API est en PHP et renvoie ses réponses en JSON. Le front-end est construit en React.js. Le projet utilise un base de données SQL. Ce projet est mon premier projet en React. Il comporte des listes d'albums, aristes, genres et chansons, ainsi que des pages dédiées. Il est également possible d'écouter les musiques. `,
                 techno: [technos.react, technos.php, technos.sql],
-                photo: "/projects/mySpotify.png", 
+                photo: "/portfolio/projects/mySpotify.png", 
                 tags : ["react", "php", "sql", "group", "spotify", "clone", "back-end", "backend", "front-end", "frontend", "fullStack", "full-stack", "short", "API"],
             },
             {
@@ -141,7 +141,7 @@ export const lang = {
                 number: "<span class='duration'>Projet de groupe</span>",
                 desc: `Le projet est une application de quizz. Nous devions utiliser Symfony pour la première fois. Le front-end est conçu avec le moteur de template de Symfony, Twig. La base de données utilisée qui nous a été donné est une base MySQL. `,
                 techno: [technos.symfony, technos.sql],
-                photo: "/projects/quizzApp.png"
+                photo: "/portfolio/projects/quizzApp.png"
             },
             {
                 className: "project-left",
@@ -152,7 +152,7 @@ export const lang = {
                 number: "<span class='duration'>Projet solo</span>",
                 desc: `J'ai réalisé ce projet juste avant d'utiliser un framework web pour la première fois. L'idée du projet est de créer un mini framework PHP, en se basant sur le même principe de fonctionnement que Laravel, Symfony ou CakePHP. Le projet permet donc de construire des sites avec une architecture MVC.`,
                 techno: [technos.php],
-                photo: "/projects/PiePHP.png"
+                photo: "/portfolio/projects/PiePHP.png"
             },
             // {
             //     className: "project-left",
@@ -164,7 +164,7 @@ export const lang = {
             //     number: "<span class='duration'>Solo project</span>",
             //     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dictum quam. Duis egestas non massa eu mollis. Ut ac consectetur ligula, vel dignissim libero. Phasellus eu nunc ut leo tristique tempus vitae quis enim. Pellentesque ut velit quis tellus laoreet mattis. Nullam sed imperdiet sapien. Nam commodo rutrum aliquam. Proin nec dolor ac tellus commodo laoreet sit amet non nisi.",
             //     techno: [technos.php],
-            //     photo: "/projects/pushSwap.png"
+            //     photo: "/portfolio/projects/pushSwap.png"
             // },
             {
                 className: "project-right",
@@ -177,7 +177,7 @@ export const lang = {
                 desc: `Ce projet est un site vitrine, qui présente l'activité des Carrières Sauvanet. Je l'ai développé en commençant à zéro, en HTML, CSS et Javascript. Le but était de présenter l'entreprise, ses produits, certaines de leur réalisations, ainsi que permettre de les contacter.
                 C'est le premier site que j'ai réalisé, pendant mon temps libre, alors que je commençais mes études à la Web@cadémie by Epitech.`,
                 techno: [technos.html, technos.css, technos.javascript],
-                photo: "/projects/carrieres.png"
+                photo: "/portfolio/projects/carrieres.png"
             }
         ],
         contactMe: "Contactez moi ! Je cherche une alternance !",
