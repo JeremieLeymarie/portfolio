@@ -92,7 +92,7 @@ export default function Skills() {
 const progressBarStyle = {
     minWidth: "300px",
     height: "22px",
-    backgroundColor: "transparent",
+    backgroundColor: "",
     borderRadius: ".25rem",
     borderWidth: "1px",
     borderColor: "#21B6A8",
