@@ -14,7 +14,7 @@ export default function Cloud() {
         responsive();
         mediaQuery.addEventListener("change", responsive);
         console.log(lang)
-        cloud = TagCloud(container, lang.cloud, { radius });
+        cloud = TagCloud(container, lang.cloud, { radius, maxSpeed : "slow" });
         return function cleanup() {
             cloud.destroy();
         }

@@ -22,6 +22,7 @@ export const lang = {
         expDescISG: "Tutoring ISG (Business school) students in the making of a website, using HTML, CSS & JQuery for the API calls. 1 week.",
         skills: "Skills",
         cloud : ["chess", "philosophy", "history", "french cooking", "italian cooking", "horror movies", "code"],
+        seeSource : "See source",
         projects: [
             {
                 className: "project-left",
@@ -116,6 +117,7 @@ export const lang = {
         expHeaderISG: "Assistant de formation en développement web - ISG",
         expDescISG: "Tutorat pour l'ISG (Ecole de commerce) pour la création d'un site web, réalisé en HTML, CSS et JQuery pour les calls API. 1 semaine",
         cloud : ["échecs", "philosophie", "histoire", "cuisine française", "cuisine italienne", "films d'horreur", "code"],
+        seeSource : "Voir le code",
         skills: "Compétences",
         projects: [
             {

@@ -16,7 +16,7 @@ export default function Navbar(props) {
         }}
         className="navbar">
             <Box sx={{ display: "flex", gap: "1.5rem", }}>
-                <Link to="/bio" id="bio" className="nav-item active-nav-item" onClick={()=>props.click("bio")}>
+                <Link to="/bio" id="bio" className="nav-item" onClick={()=>props.click("bio")}>
                     Bio
                 </Link> -
                 <Link to="/projects" id="projects" className="nav-item" onClick={()=>props.click("projects")}>

@@ -1,4 +1,4 @@
-import { useContext, useState, useRef } from "react";
+import { useContext, useState, useRef, useEffect } from "react";
 import { LangContext } from "../LangContext";
 import { Box, CircularProgress, Snackbar } from "@mui/material";
 import SendIcon from '@mui/icons-material/Send';
@@ -12,6 +12,10 @@ export default function Contact(props) {
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
     const [open, setOpen] = useState(false);
+
+    useEffect(()=>{
+        props.click("contact"); 
+    });
 
     function sendEmail(e) {
         e.preventDefault();
@@ -32,6 +36,8 @@ export default function Contact(props) {
                     emailjs.sendForm(apiKeys.SERVICE_ID, apiKeys.TEMPLATE_ID, form.current, apiKeys.USER_ID)
                         .then((res) => {
                             if (res.text === "OK") {
+                                document.getElementById("email-adress").value = "";
+                                document.getElementById("message-email").value = ""; 
                                 setLoading(false);
                                 setSuccess(lang.emailSuccess);
                             }

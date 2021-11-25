@@ -1,4 +1,4 @@
-import React, { useContext, /*useState,  useEffect */ } from "react";
+import React, { useContext, /*useState ,*/  useEffect } from "react";
 import { LangContext } from "../LangContext";
 import { Box } from "@mui/material";
 // import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -9,9 +9,9 @@ export default function Projects(props) {
     // const [filteredProjects, setProjects] = useState(projects);
     // const [searchValue, setSearch] = useState(null);
 
-    // useEffect(() => {
-    //     search(searchValue);
-    // }, [search]);
+    useEffect(() => {
+        props.click("projects"); 
+    }, []);
 
     // function search(value) {
     //     let tmp = [];
@@ -45,6 +45,7 @@ export default function Projects(props) {
 }
 
 function Project({ data }) {
+    const seeSource = useContext(LangContext).lang.seeSource;
 
     function renderHtml(str) {
         return React.createElement("div", { dangerouslySetInnerHTML: { __html: str } });
@@ -62,7 +63,7 @@ function Project({ data }) {
             <Box className="project-text-wrapper">
                 <Box className="project-header">
                     <Box className="project-title">{data.name}</Box>
-                    <a rel="noreferrer" href={data.source} target="_blank" alt={data.name + " Jérémie Leymarie"}><Box className="project-github">See source</Box></a>
+                    <a rel="noreferrer" href={data.source} target="_blank" alt={data.name + " Jérémie Leymarie"}><Box className="project-github">{seeSource}</Box></a>
                 </Box>
                 <Box className="project-duration">{renderHtml(data.duration)}</Box>
                 <Box className="project-number">{renderHtml(data.number)}</Box>

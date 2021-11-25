@@ -20,7 +20,7 @@ export default function Bio(props) {
     }
 
     useEffect(() => {
-
+        props.click("bio");
         window.addEventListener("scroll", () => {
             let arrow = document.getElementById("arrow");
             try {

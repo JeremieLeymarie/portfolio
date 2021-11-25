@@ -11,7 +11,10 @@ import Contact from "./Components/Contact";
 function App() {
 
   function changeActiveItem(id) {
-    document.getElementsByClassName("active-nav-item")[0].classList.remove("active-nav-item");
+    if (document.getElementsByClassName("active-nav-item").length > 0){
+      document.getElementsByClassName("active-nav-item")[0].classList.remove("active-nav-item");
+    }
+
     document.getElementById(id).classList.add("active-nav-item");
   }
 
@@ -19,12 +22,12 @@ function App() {
     <div className="App">
       <Router>
         <LanguageProvider>
-          <Navbar click={changeActiveItem}/>
+          <Navbar click={changeActiveItem} />
           <Routes>
-            <Route path="/bio" element={<Bio />} />
-            <Route path="/" element={<Bio />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/bio" element={<Bio click={changeActiveItem} />} />
+            <Route path="/" element={<Bio click={changeActiveItem} />} />
+            <Route path="/projects" element={<Projects click={changeActiveItem} />} />
+            <Route path="/contact" element={<Contact click={changeActiveItem} />} />
           </Routes>
         </LanguageProvider>
       </Router>
