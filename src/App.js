@@ -1,7 +1,7 @@
 import './App.css';
 import './responsive.css';
 import React, { } from 'react';
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router, HashRouter } from "react-router-dom";
 import LanguageProvider from "./Components/LanguageProvider";
 import Navbar from './Components/Navbar';
 import Bio from "./Components/Bio";
@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter base="/">
         <LanguageProvider>
           <Navbar click={changeActiveItem} />
           <Routes>
@@ -30,7 +30,7 @@ function App() {
             <Route path="/contact" element={<Contact click={changeActiveItem} />} />
           </Routes>
         </LanguageProvider>
-      </Router>
+      </HashRouter>
     </div>
   );
 }
