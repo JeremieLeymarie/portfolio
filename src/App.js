@@ -20,7 +20,7 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter base="/">
+      <HashRouter basename="/">
         <LanguageProvider>
           <Navbar click={changeActiveItem} />
           <Routes>
