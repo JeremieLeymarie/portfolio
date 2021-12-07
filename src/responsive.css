@@ -4,8 +4,8 @@
     .bio-wrapper {
         display: flex;
         flex-direction: column !important;
-        margin-top: 5rem !important;
-        justify-content: center;
+        margin-top: 3rem !important;
+        justify-content: space-evenly;
     }
 
     .desc {
@@ -67,7 +67,7 @@
     }
 
     .bio-wrapper {
-        display: block !important;
+        /* display: block !important; */
         margin-top: 5rem !important;
         width: 100% !important;
         height: max-content !important;

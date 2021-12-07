@@ -143,6 +143,8 @@ ul {
   height: 90vh;
   place-items: center;
   position: relative;
+  display : flex; 
+  justify-content: space-between;
 }
 
 .bounce {

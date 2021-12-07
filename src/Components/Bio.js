@@ -45,22 +45,22 @@ export default function Bio(props) {
 
     return (
         <Box>
-            <Grid container spacing={2} className="bio-wrapper">
-                <Grid item xs={4} >
+            <Box  className="bio-wrapper">
+                <Box  >
                     <Avatar className="portrait" sx={{ width: "300px", height: "300px", maxWidth: "600px", marginTop: "-5rem" }} alt="Jérémie Leymarie" src="/portfolio/portrait.jpg" />
-                </Grid>
-                <Grid className="alignRight bio-text" item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
+                </Box>
+                <Box className="alignRight bio-text" item xs={8} sx={{ textAlign: "right", display: "flex", alignItems: "center", }}>
                     <Box className="bio-box" sx={{ display: "flex", alignItems: "flex-end", flexDirection: "column", marginTop: "-2rem" }}>
                         <Box className="desc" sx={{ fontSize: "1.75rem", fontWeight: "500", color: "white" }}>Jérémie Leymarie</Box>
                         <Box className="desc" sx={{ color: "#9388A2", fontSize: "1.15rem", fontWeight: "500", marginBottom: "2.5rem", marginTop: ".5rem" }}>{lang.developer}</Box>
                         <Box className="desc" sx={{ color: "#21B6A8", fontSize: "1.15rem", fontWeight: "500", width: "70%" }}>{renderHtml(lang.desc)}</Box>
                         <Socials className="desc" />
                     </Box>
-                </Grid>
+                </Box>
                 <Box sx={{ width: "100%", display: "flex", justifyContent: "center", position: "absolute", bottom: "0px" }}>
                     <KeyboardArrowDownOutlinedIcon id="arrow" onClick={scrollToSkills} className="arrow" sx={{ color: "white", fontSize: "45px", cursor: "pointer" }} />
                 </Box>
-            </Grid >
+            </Box >
             <Box className="firstBox" sx={{ display: "flex", width: "100%", justifyContent: "space-evenly" }}>
                 <Formation />
                 <Skills />
